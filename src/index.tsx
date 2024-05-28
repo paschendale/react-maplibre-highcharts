@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <ColorModeScript />
+    <ColorModeScript initialColorMode="dark" />
     <App />
   </React.StrictMode>
 );

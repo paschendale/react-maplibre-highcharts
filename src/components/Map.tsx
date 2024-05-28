@@ -2,6 +2,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState } from "react";
 import MapGL from "react-map-gl/maplibre";
+import { mapstyle } from "../mapstyle";
 import { useApp } from "../providers/AppProvider";
 
 export default function Map() {
@@ -27,7 +28,7 @@ export default function Map() {
       mapLib={maplibregl}
       onMove={(evt) => setViewState(evt.viewState)}
       style={{ width: "100%", height: "100%" }}
-      mapStyle="https://s3.amazonaws.com/cdn.brianbancroft.io/assets/osmstyle.json"
+      mapStyle={mapstyle as any}
     />
   );
 }
