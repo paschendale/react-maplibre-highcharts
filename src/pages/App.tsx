@@ -1,13 +1,16 @@
-import { Box, ChakraProvider, Flex, theme } from "@chakra-ui/react";
-import { useMap } from "react-map-gl/dist/esm/exports-maplibre";
+import { Box, ChakraProvider, Flex, extendTheme } from "@chakra-ui/react";
+import { ColorModeSwitcher } from "../components/ColorModeSwitcher";
 import Dashboard from "../components/Dashboard";
 import Map from "../components/Map";
 
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config });
+
 export default function App() {
-  const { current: map } = useMap();
-
-  console.log(map);
-
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
@@ -32,7 +35,7 @@ export default function App() {
             <Dashboard />
           </Box>
         </Flex>
-        {/* <ColorModeSwitcher position={"absolute"} top={0} left={0} zIndex={3} /> */}
+        <ColorModeSwitcher position={"absolute"} top={0} left={0} zIndex={3} />
       </Box>
     </ChakraProvider>
   );

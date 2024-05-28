@@ -1,5 +1,6 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
+import logo from "./../assets/favicon.png";
 import Chart from "./Chart";
 
 export default function Dashboard() {
@@ -35,7 +36,7 @@ export default function Dashboard() {
         justifyContent={"center"}
       >
         <Text fontSize={"sm"}>Powered by </Text> &nbsp;
-        <Image src="/favicon.png" alt="Logo" h={10} />
+        <Image src={logo} alt="Logo" h={10} />
       </Flex>
     </Flex>
   );
