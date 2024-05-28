@@ -1,3 +1,4 @@
+import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState } from "react";
 import MapGL from "react-map-gl/maplibre";
@@ -23,6 +24,7 @@ export default function Map() {
     <MapGL
       {...viewState}
       ref={mapRef}
+      mapLib={maplibregl}
       onMove={(evt) => setViewState(evt.viewState)}
       style={{ width: "100%", height: "100%" }}
       mapStyle="https://s3.amazonaws.com/cdn.brianbancroft.io/assets/osmstyle.json"
