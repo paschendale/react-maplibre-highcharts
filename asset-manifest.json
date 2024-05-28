@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-maplibre-highcharts/static/css/main.d11b8a96.css",
-    "main.js": "/react-maplibre-highcharts/static/js/main.021bf106.js",
+    "main.js": "/react-maplibre-highcharts/static/js/main.537fa37d.js",
     "static/js/453.0ae0db25.chunk.js": "/react-maplibre-highcharts/static/js/453.0ae0db25.chunk.js",
     "index.html": "/react-maplibre-highcharts/index.html",
     "main.d11b8a96.css.map": "/react-maplibre-highcharts/static/css/main.d11b8a96.css.map",
-    "main.021bf106.js.map": "/react-maplibre-highcharts/static/js/main.021bf106.js.map",
+    "main.537fa37d.js.map": "/react-maplibre-highcharts/static/js/main.537fa37d.js.map",
     "453.0ae0db25.chunk.js.map": "/react-maplibre-highcharts/static/js/453.0ae0db25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d11b8a96.css",
-    "static/js/main.021bf106.js"
+    "static/js/main.537fa37d.js"
   ]
 }
